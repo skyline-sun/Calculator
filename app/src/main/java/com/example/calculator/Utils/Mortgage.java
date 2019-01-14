@@ -5,7 +5,7 @@ import android.util.Log;
 import java.text.DecimalFormat;
 
 public class Mortgage {
-    private int mortgage;
+    private double mortgage;
     private double rate;
     private double montRate;
 
@@ -19,7 +19,7 @@ public class Mortgage {
     private String interest_str;
     private String monthsum_str;
 
-    public Mortgage(int mortgage, double rate, int time) {
+    public Mortgage(double mortgage, double rate, int time) {
         this.mortgage = mortgage;
         this.rate = rate / 100;
         this.time = time;

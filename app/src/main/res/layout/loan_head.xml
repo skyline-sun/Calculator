@@ -15,7 +15,8 @@
 
         <EditText
             android:id="@+id/edit_Mortgage"
-            style="@style/EditTextNumberStyle" />
+            android:maxLength="8"
+            style="@style/EditTextNumberDecimalStyle" />
 
     </LinearLayout>
 

@@ -83,9 +83,9 @@ public class AvgCapPlus_Fragment extends Fragment {
                     Toast.makeText(getActivity(), "请输入合理的贷款总额", Toast.LENGTH_SHORT).show();
                 else {
                     double rate = loanData.getRate(Pattern.getSelectedIndex(), Time.getSelectedIndex() + 1, Rate.getSelectedIndex());
-                    Toast.makeText(getActivity(), Double.toString(rate), Toast.LENGTH_SHORT).show();
 
-                    int mortgage = Integer.valueOf(m);
+
+                    double mortgage = Double.valueOf(m);
                     int time = Integer.valueOf(t);
 
                     Mortgage calculation = new Mortgage(mortgage, rate, time);

@@ -75,11 +75,14 @@ public class AvgCap_Fragment extends Fragment {
 
                 if(0 == m.length()||0 == t.length()){
                     Toast.makeText(getActivity(),"请输入数据",Toast.LENGTH_SHORT).show();
-                } else {
+                }
+                else if(Double.valueOf(m)>10000)
+                    Toast.makeText(getActivity(), "请输入合理的贷款总额", Toast.LENGTH_SHORT).show();
+                else {
                     double rate = loanData.getRate(Pattern.getSelectedIndex(),Time.getSelectedIndex() + 1, Rate.getSelectedIndex());
-                    Toast.makeText(getActivity(), Double.toString(rate), Toast.LENGTH_SHORT).show();
 
-                    int mortgage = Integer.valueOf(m);
+
+                    double mortgage = Double.valueOf(m);
                     int time = Integer.valueOf(t);
 
                     Mortgage calculation = new Mortgage(mortgage, rate, time);
