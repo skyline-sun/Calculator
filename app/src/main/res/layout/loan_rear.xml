@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="还款总额（元）"
+            style="@style/TextViewStyle"/>
+
+        <EditText
+            android:id="@+id/edit_Sum"
+            style="@style/EditTextResultStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="利息总额（元）"
+            style="@style/TextViewStyle" />
+
+        <EditText
+            android:id="@+id/edit_Interest"
+            style="@style/EditTextResultStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>

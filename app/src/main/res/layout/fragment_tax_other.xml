@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/tax_annual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/spinner_incomeType"
+            style="@style/NiceSpinnerStyle"
+            android:layout_marginBottom="15dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="税前收入（元）" />
+
+            <EditText
+                android:id="@+id/edit_beforeTax"
+                style="@style/EditTextNumberStyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="最终收入（元）" />
+
+            <EditText
+                android:id="@+id/edit_AfterTax"
+                style="@style/EditTextResultStyle"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/btn_cal"
+            android:id="@+id/btn_annualCal"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
