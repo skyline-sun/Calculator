@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/tax_salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:text="税前收入（元）"
+                style="@style/TextViewStyle" />
+
+            <EditText
+                android:id="@+id/edit_Salary"
+                style="@style/EditTextNumberStyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/TextViewStyle"
+                        android:text="公积金（%）" />
+
+                    <EditText
+                        android:id="@+id/edit_GongJiJin"
+                        style="@style/EditTextNumberDecimalStyle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/TextViewStyle"
+                        android:text="医疗（%）" />
+
+                    <EditText
+                        android:id="@+id/edit_YiLiao"
+                        style="@style/EditTextNumberDecimalStyle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/TextViewStyle"
+                        android:text="养老（%）" />
+
+                    <EditText
+                        android:id="@+id/edit_YangLao"
+                        style="@style/EditTextNumberDecimalStyle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/TextViewStyle"
+                        android:text="失业（%）" />
+
+                    <EditText
+                        android:id="@+id/edit_ShiYe"
+                        style="@style/EditTextNumberDecimalStyle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/TextViewStyle"
+                        android:text="工伤（%）" />
+
+                    <EditText
+                        android:id="@+id/edit_GongShang"
+                        style="@style/EditTextNumberDecimalStyle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/TextViewStyle"
+                        android:text="生育（%）" />
+
+                    <EditText
+                        android:id="@+id/edit_ShengYu"
+                        style="@style/EditTextNumberDecimalStyle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="税后收入（元）" />
+
+            <EditText
+                android:id="@+id/edit_AfterSalary"
+                style="@style/EditTextResultStyle" />
+
+        </LinearLayout>
+
+        <include layout="@layout/btn_cal"
+            android:id="@+id/btn_salaryCal"/>
+    </LinearLayout>
+
+</RelativeLayout>

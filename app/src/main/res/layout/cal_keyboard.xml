@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingVertical="25dp"
+    android:paddingStart="40dp"
+    android:paddingEnd="35dp">
+
+    <TableRow
+        android:id="@+id/tab_row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_ac"
+            android:text="@string/ac" />
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_percent"
+            android:text="@string/percent" />
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_delete"
+            android:text="@string/delete" />
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_divide"
+            android:text="@string/divide" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tab_row2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_num7"
+            android:text="@string/num7" />
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_num8"
+            android:text="@string/num8" />
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_num9"
+            android:text="@string/num9" />
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_multiply"
+            android:text="@string/multiply" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tab_row3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_num4"
+            android:text="@string/num4"/>
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_num5"
+            android:text="@string/num5"/>
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_num6"
+            android:text="@string/num6"/>
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_minus"
+            android:text="@string/minus"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tab_row4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_num1"
+            android:text="@string/num1" />
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_num2"
+            android:text="@string/num2" />
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_num3"
+            android:text="@string/num3" />
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_plus"
+            android:text="@string/plus" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tab_row5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_num00"
+            android:text="@string/num00"/>
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_num0"
+            android:text="@string/num0"/>
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_point"
+            android:text="@string/point" />
+
+        <Button
+            style="@style/CalKeyStyle"
+            android:id="@+id/btn_equal"
+            android:text="@string/equal" />
+    </TableRow>
+
+</TableLayout>
