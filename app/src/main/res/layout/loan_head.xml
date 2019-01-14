@@ -27,9 +27,9 @@
             android:text="还款年数（年）"
             style="@style/TextViewStyle"/>
 
-        <EditText
-            android:id="@+id/edit_Time"
-            style="@style/EditTextNumberStyle" />
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/spinner_time"
+            style="@style/NiceSpinnerStyle"/>
 
     </LinearLayout>
 

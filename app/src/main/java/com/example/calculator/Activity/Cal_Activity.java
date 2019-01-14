@@ -27,7 +27,6 @@ public class Cal_Activity extends AppCompatActivity {
         initView();
         initMap();
         setOnClickListener();
-
     }
 
     private void setOnClickListener() {
